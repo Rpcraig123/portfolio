@@ -63,17 +63,161 @@
 }
 
 .contact{
-  background-color: lightblue;
+  background-color: white;
   width: 100vw;
   height: calc(100vh - 70px);
   scroll-snap-align: start;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-left{
+  /* flex: 1; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.contact-right{
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-right h2{
+  font-size: 30px;
+}
+
+.contact-right form{
+  /* width: 70%;
+  height: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-right input{
+  width: 300px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.contact-right textarea{
+  width: 300px;
+  height: 200px;
+  font-size: 14px;
+}
+
+.contact-right button{
+  width: 150px;
+  height: 30px;
+  color: white;
+  background-color: crimson;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.contact-right button:focus{
+  outline: none;
 }
 
 .projects{
-  background-color: burlywood;
+  background-color: white;
   width: 100vw;
   height: calc(100vh - 70px);
   scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects h1{
+  font-size: 50px
+}
+
+.projects ul{
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.projects ul li{
+  font-size: 12px;
+  margin-right: 5px;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.project-container{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  width: 220px;
+  height: 150px;
+  border-radius: 20px;
+  border: 1px solid lightgrey;
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.portfolioList{
+  font-size: 14px;
+  margin-right: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.portfolioList .active{
+  background-color: lightseagreen;
+  color: white;
+}
+
+.project-item h3{
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.project-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 1;
+}
+
+.project-item:hover{
+  background-color: lightseagreen;
+}
+
+.project-item img:hover{
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.feat_active{
+  background-color: lightseagreen;
+  color: white;
 }
 
 .intro{
@@ -85,18 +229,20 @@
 }
 
 .intro .left {
-  flex: 0.5;
+  flex: 0.6;
   overflow: hidden;
 }
 
 .left .imgContainer{
-  width: 700px;
-  height: 700px;
-  background-color: crimson;
-  border-radius: 50%;
+  /* width: 800px; */
+  /* height: 100%; */
+  /* background-color: crimson;
+  border-radius: 50%; */
   display: flex;
-  align-items: flex-end;
+  /* align-items: ; */
   justify-content: center;
+  align-items: center;
+  /* align-content: center; */
   float: right;
 }
 
@@ -105,7 +251,7 @@
 }
 
 .intro .right{
-  flex: 0.5;
+  flex: 0.4;
   position: relative;
 }
 
@@ -186,7 +332,7 @@
 .sections {
   width: 100%;
   height: calc(100vh - 70px);
-  background-color: magenta;
+  background-color: lightseagreen;
   position: relative;
   top: 70px;
   scroll-behavior: smooth;
@@ -195,7 +341,7 @@
 }
 
 .active{
-  background-color: purple;
+  background-color: lightseagreen;
   color: white;
 }
 
@@ -216,7 +362,7 @@
 .menu{
   width: 300px;
   height: 100vh;
-  background-color: purple;
+  background-color: lightseagreen;
   position: fixed;
   top: 0;
   right: -300px;

@@ -19,7 +19,7 @@ export default function Introduction() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="" alt="" />
+          <img src="assets/Intro4.gif" alt="" />
         </div>
       </div>
       <div className="right">
