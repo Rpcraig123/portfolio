@@ -1,13 +1,240 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.topbar{
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar .left{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 40px;
+}
+
+.itemContainer{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.itemContainer span{
+  font-size: 15px; 
+  font-weight: 500;
+}
+
+.icon{
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.hamburger{
+  width: 32px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span{
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transform-origin: left;
+  transition: all 1s ease;
+}
+
+.contact{
+  background-color: lightblue;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
+}
+
+.projects{
+  background-color: burlywood;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
+}
+
+.intro{
+  background-color: white;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
+  display: flex;
+}
+
+.intro .left {
+  flex: 0.5;
+  overflow: hidden;
+}
+
+.left .imgContainer{
+  width: 700px;
+  height: 700px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  float: right;
+}
+
+.imgContainer img{
+  height: 90%;
+}
+
+.intro .right{
+  flex: 0.5;
+  position: relative;
+}
+
+.right .intro-wrapper{
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro .right .intro-wrapper h1 {
+  font-size: 60px;
+  margin: 10px 0;
+  text-align: start;
+}
+
+.right .intro-wrapper h2 {
+  font-size: 35px;
+}
+
+.right .intro-wrapper h3 {
+  font-size: 30px;
+}
+
+.right a{
+  position: absolute;
+  bottom: 10px;
+  left: 55%;
+  transition: 1s ease;
+}
+
+.right a:hover{ 
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+  transition: 0.5s ease;
+}
+
+.right img{
+  width: 30px;
+}
+
+.app{
+  height: 100vh;
+}
+
+.sections::-webkit-scrollbar {
+  display: none;
+}
+
+.topbar::-webkit-scrollbar{
+  display: none;
+}
+
+.hamburger::-webkit-scrollbar{
+  display: none;
+}
+
+.sections {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: magenta;
+  position: relative;
+  top: 70px;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+}
+
+.active{
+  background-color: purple;
+  color: white;
+}
+
+.active .hamburger :first-child{
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.active .hamburger :last-child{
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+.active .hamburger :nth-child(2){
+  opacity: 0;
+}
+
+.menu{
+  width: 300px;
+  height: 100vh;
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+
+.active1{
+  right: 0;
+}
+
+.menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+  width: 60%;
+}
+
+.menu li{
+  margin-bottom: 20px;
+}
+
+.menu li:hover{
+  font-weight: 500;
+}
+
+.menu ul li a{
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
 }
