@@ -1,6 +1,7 @@
 import React from 'react'
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Topbar(props) {
   return (
@@ -15,6 +16,10 @@ export default function Topbar(props) {
           <div className="itemContainer">
             <MailIcon className="icon"/>
             <span>Ryanpcraig1@gmail.com</span>
+          </div>
+          <div className="itemContainer">
+            <LinkedInIcon className="icon"/>
+            <span>https://www.linkedin.com/in/ryancraigeit/</span>
           </div>
         </div>
         <div className="right">

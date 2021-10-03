@@ -140,14 +140,31 @@
 }
 
 .right a:hover{ 
-  -webkit-transform: scale(2);
-  -ms-transform: scale(2);
-  transform: scale(2);
+  -webkit-transform: scale(1.75);
+  -ms-transform: scale(1.75);
+  transform: scale(1.75);
   transition: 0.5s ease;
+}
+
+.intro .right::-webkit-scrollbar {
+  display: none;
 }
 
 .right img{
   width: 30px;
+}
+
+.ityped-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 .app{
