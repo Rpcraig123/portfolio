@@ -17,10 +17,12 @@ export default function Topbar(props) {
             <MailIcon className="icon"/>
             <span>Ryanpcraig1@gmail.com</span>
           </div>
+          <a href="https://www.linkedin.com/in/ryancraigeit/" className="logo">
           <div className="itemContainer">
             <LinkedInIcon className="icon"/>
             <span>https://www.linkedin.com/in/ryancraigeit/</span>
           </div>
+          </a>
         </div>
         <div className="right">
           <div className="hamburger" onClick={()=>props.setMenuOpen(!props.menuOpen)}>

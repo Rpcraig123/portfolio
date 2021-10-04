@@ -13,6 +13,9 @@ export default function Menu(props) {
         <li onClick={()=>props.setMenuOpen(false)}>
           <a href="#contact">Contact Info</a>
         </li>
+        <li onClick={()=>props.setMenuOpen(false)}>
+          <a href="https://drive.google.com/file/d/1vaHpVviMyryVGPDGgw1fMp--xAurdvAV/view?usp=sharing">Resume</a>
+        </li>
       </ul>
     </div>
   )
