@@ -8,17 +8,17 @@ export default function Topbar(props) {
     <div className= {"topbar " + (props.menuOpen && "active")} >
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">Portfolio</a>
-          <div className="itemContainer">
+          <a href="#intro" id="title-text" className="logo">Ryan's Portfolio</a>
+          <div className="itemContainer" id="address">
             <LocationOnIcon className="icon"/>
             <span>Houston, TX</span>
           </div>
-          <div className="itemContainer">
+          <div className="itemContainer" id="email">
             <MailIcon className="icon"/>
             <span>Ryanpcraig1@gmail.com</span>
           </div>
           <a href="https://www.linkedin.com/in/ryancraigeit/" className="logo">
-          <div className="itemContainer">
+          <div className="itemContainer" id="linkedin">
             <LinkedInIcon className="icon"/>
             <span>https://www.linkedin.com/in/ryancraigeit/</span>
           </div>

@@ -17,7 +17,7 @@ export default function Introduction() {
 
   return (
     <div className="intro" id="intro">
-      <div className="left">
+      <div className="left" id="intro-image">
         <div className="imgContainer">
           <img src="assets/Intro4.gif" alt="" />
         </div>
@@ -28,9 +28,10 @@ export default function Introduction() {
           <h1>Ryan Craig</h1>
           <h3><span ref={textRef}></span></h3>
         </div>
-        <a href="#projects">
+        {/* <a href="#projects">
+          <h3>Check out My Porfolio!</h3>
           <img src="assets/down.png" alt=""/>
-        </a>
+        </a> */}
       </div>
     </div>
   )

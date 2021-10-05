@@ -9,6 +9,33 @@
   transition: all 1s ease;
 }
 
+@media screen and (max-width: 1175px) {
+  #address {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  #nav-left {
+    display: none;
+  }
+  #email {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #linkedin {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  #title-text{
+    font-size: 20pt;
+  }
+}
+
 .wrapper{
   padding: 10px 30px;
   display: flex;
@@ -26,7 +53,6 @@
   font-weight: 700;
   text-decoration: none;
   color: inherit;
-  margin-right: 40px;
 }
 
 .itemContainer{
@@ -125,6 +151,13 @@
 
 .contact-right button:focus{
   outline: none;
+}
+
+.aboutme{
+  background-color: white;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
 }
 
 .projects{
@@ -372,6 +405,18 @@
   align-items: center;
   justify-content: center;
   transition: all 1s ease;
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    width: 150px;
+  }
+  #menu-list {
+    font-size: 15px;
+  }
+  #intro-image {
+    display: none;
+  }
 }
 
 .active1{
