@@ -22,16 +22,12 @@ export default function Introduction() {
           <img src="assets/Intro4.gif" alt="" />
         </div>
       </div>
-      <div className="right">
-        <div className="intro-wrapper">
+      <div className="right" id="intro-right">
+        <div className="intro-wrapper" id="intro-wrapper">
           <h2>Hi There, I'm</h2>
           <h1>Ryan Craig</h1>
           <h3><span ref={textRef}></span></h3>
         </div>
-        {/* <a href="#projects">
-          <h3>Check out My Porfolio!</h3>
-          <img src="assets/down.png" alt=""/>
-        </a> */}
       </div>
     </div>
   )

@@ -5,6 +5,7 @@ import Contact from './components/Contact'
 import Menu from './components/Menu'
 import AboutMe from './components/AboutMe'
 import { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)

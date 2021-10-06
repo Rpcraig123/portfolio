@@ -1,23 +1,53 @@
 import React from "react"
+import { Card, Image } from 'react-bootstrap';
 
 export default function Contact() {
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  }
-
   return (
     <div className="contact" id="contact">
-      <div className="contact-left">
-        <img src="assets/Contact3.gif" alt="" />
+      <div className="contact-left" >
+        <Image src="assets/Contact3.gif" alt="email gif" fluid id="contact-image"/>
       </div>
       <div className="contact-right">
-        <h2>Contact</h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="email" />
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Send</button>
-        </form>
+        <h2 id="contact-text">Contact Me!</h2>
+        <Card bg='info' text='dark' style={{width: '22rem' }} className="mb-2">
+          <Card.Body>
+            <Card.Title>Email</Card.Title>
+            <Card.Text>
+              Ryanpcraig1@gmail.com
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <a href="https://github.com/Rpcraig123" id="resume-link">
+          <Card bg='info' text='dark' style={{width: '22rem' }} className="mb-2">
+            <Card.Body>
+              <Card.Title>Linkedin</Card.Title>
+              <Card.Text>
+                https://www.linkedin.com/in/ryancraigeit/
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </a>
+        <a href="https://github.com/Rpcraig123" id="resume-link">
+          <Card bg='info' text='dark' style={{width: '22rem' }} className="mb-2">
+            <Card.Body>
+              <Card.Title>GitHub</Card.Title>
+              <Card.Text>
+                https://github.com/Rpcraig123
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </a>
+        <a href="https://drive.google.com/file/d/1vaHpVviMyryVGPDGgw1fMp--xAurdvAV/view?usp=sharing" id="resume-link">
+          <Card bg='info' text='dark' style={{width: '22rem' }} className="mb-2">
+            <Card.Body>
+              <Card.Title>Resume</Card.Title>
+              <Card.Text>
+                Click to View!
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </a>
       </div>
     </div>
   )
