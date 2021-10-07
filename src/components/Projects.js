@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import { featuredPortfolio } from './data';
-import { Card, Container } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 export default function Projects() {
     const [data, setData] = useState([]);
