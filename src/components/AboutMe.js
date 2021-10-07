@@ -8,7 +8,6 @@ export default function AboutMe() {
 
   return (
     <div className="aboutme" id="aboutme">
-      
       <div className="About-Me-Left">
         <img src="assets/Intro3.gif" alt="" />
       </div>
