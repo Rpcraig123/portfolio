@@ -20,7 +20,7 @@ export default function Topbar(props) {
           <a href="https://www.linkedin.com/in/ryancraigeit/" className="logo">
           <div className="itemContainer" id="linkedin">
             <LinkedInIcon className="icon"/>
-            <span>https://www.linkedin.com/in/ryancraigeit/</span>
+            <span>LinkedIn</span>
           </div>
           </a>
         </div>

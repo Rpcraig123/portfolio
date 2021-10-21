@@ -40,5 +40,19 @@ export const featuredPortfolio = [
     img: "assets/messenger.gif",
     gitLink: "https://github.com/Rpcraig123/u4_hw_vue_messenger",
     desc: "An messaging web app used to communicate with other students. Built using Vue.js and websockets"
+  },
+  {
+    id: 7,
+    title: "Gear Grindr",
+    img: "assets/GearGrindr.gif",
+    gitLink: "https://github.com/Rpcraig123/Gear-Grindr",
+    desc: "A full stack applciation where users can discuss what grinds their gears. Built using Vue.js and flask"
+  },
+  {
+    id: 8,
+    title: "Gregslist",
+    img: "assets/gregslist.gif",
+    gitLink: "https://github.com/Rpcraig123/Gregslist",
+    desc: "An ecommerce store where users and can sell their belongings. Built using the MERN stack and Redux"
   }
 ];
