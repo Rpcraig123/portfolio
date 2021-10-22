@@ -38,7 +38,7 @@ export default function Contact() {
             </Card.Body>
           </Card>
         </a>
-        <a href="https://drive.google.com/file/d/1vaHpVviMyryVGPDGgw1fMp--xAurdvAV/view?usp=sharing" id="resume-link">
+        <a href="https://drive.google.com/file/d/10wS8ueO32cKgqDCtJ0Zxr7Oxg9IZEyT4/view?usp=sharing" id="resume-link">
           <Card bg='info' text='dark' style={{width: '22rem' }} className="mb-2">
             <Card.Body>
               <Card.Title>Resume</Card.Title>
