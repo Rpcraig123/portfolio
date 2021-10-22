@@ -12,13 +12,13 @@ export default function Projects() {
     
   return (
     <div className="projects" id="projects">
-      {/* <div className="project-scale"> */}
+      <div className="project-scale">
         <div className="project-title">
           <h1>Projects</h1>
         </div>
         <div className="project-container">
           {data.map((d) => (
-              // <div className="project-card">
+              <div className="project-card">
                 <Card>
                 <div className="project-item">
                   <img src={d.img} alt=""/>
@@ -29,10 +29,10 @@ export default function Projects() {
                     <Card.Link href={d.gitLink} className="btn btn-4"><img src="assets/GitHub_Link.png" width="90px" alt="GitHub Link"/></Card.Link>
                   </Card.Body>
                 </Card>
-              // </div>
+              </div>
           ))}
         </div>
-      {/* </div> */}
+      </div>
     </div>
   )
 }
