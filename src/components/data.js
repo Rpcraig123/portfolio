@@ -53,6 +53,6 @@ export const featuredPortfolio = [
     title: "Gregslist",
     img: "assets/gregslist.gif",
     gitLink: "https://github.com/Rpcraig123/Gregslist",
-    desc: "An ecommerce store where users and can sell their belongings."
+    desc: "An ecommerce store where users can sell their belongings."
   }
 ];
