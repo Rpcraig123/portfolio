@@ -24,21 +24,21 @@ export const featuredPortfolio = [
     id: 4,
     title: "Tic Tac Toe",
     img: "assets/TicTacToe.gif",
-    gitLink: "https://github.com/Rpcraig123/u1_hw_tic_tac_toe",
+    gitLink: "https://github.com/Rpcraig123/Tic-Tac-Toe",
     desc: "Play Tic Tac Toe in this simple web app built with HTML, CSS, and Javascript."
   },
   {
     id: 5,
     title: "RawG Video Game App",
     img: "assets/RawG1.gif",
-    gitLink: "https://github.com/Rpcraig123/u4_hw_vue_RAWG",
+    gitLink: "https://github.com/Rpcraig123/RAWG_API_Project",
     desc: "Discover new video games with this RawG API powered web app. Created with Vue.js."
   },
   {
     id: 6,
     title: "Vue Messenger",
     img: "assets/messenger.gif",
-    gitLink: "https://github.com/Rpcraig123/u4_hw_vue_messenger",
+    gitLink: "https://github.com/Rpcraig123/Vue-Messenger",
     desc: "An messaging web app used to communicate with other students. Built using Vue.js."
   },
   {
