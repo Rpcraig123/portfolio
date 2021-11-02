@@ -247,6 +247,21 @@
   }
 }
 
+@media screen and (max-width: 1200px), (max-height: 1000px){
+  .About-Me-Right{
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+  .About-Me-Left{
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+}
+
 @media screen and (max-height: 650px){
   .About-Me-Left{
     padding-top: 15px;
