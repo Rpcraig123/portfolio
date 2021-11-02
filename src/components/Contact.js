@@ -18,7 +18,7 @@ export default function Contact() {
             </Card.Text>
           </Card.Body>
         </Card>
-        <a href="https://github.com/Rpcraig123" id="resume-link">
+        <a href="https://www.linkedin.com/in/ryancraigeit/" id="resume-link">
           <Card bg='info' text='dark' style={{width: '22rem' }} className="mb-2">
             <Card.Body>
               <Card.Title>Linkedin</Card.Title>
